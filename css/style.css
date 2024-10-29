@@ -166,6 +166,57 @@ footer {
     margin-left: 1.5rem; /* Indentación para la lista */
 }
 
+/* Estilos para la página de contacto */
+.contact-container {
+    padding: 2rem;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 1rem; /* Bordes redondeados */
+    margin: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Ancho máximo para la sección de contacto */
+    margin-left: auto; /* Centrar el contenedor */
+    margin-right: auto; /* Centrar el contenedor */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.contact-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact-container button {
+    padding: 0.5rem;
+    background-color: #4a5c69;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-container button:hover {
+    background-color: #3e4c58; /* Cambia color al pasar el ratón */
+}
+
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
     .image-container {
@@ -178,7 +229,7 @@ footer {
         margin-bottom: 2rem;
     }
 
-    .about-container {
+    .about-container, .contact-container {
         padding: 1rem; /* Espacio menor en pantallas pequeñas */
     }
 }
